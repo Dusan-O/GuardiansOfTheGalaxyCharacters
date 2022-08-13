@@ -15,6 +15,7 @@
 		2F9C294528A7200800263623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C294328A7200800263623 /* LaunchScreen.storyboard */; };
 		2F9C294D28A720D300263623 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C294C28A720D300263623 /* Guardian.swift */; };
 		2F9C294F28A7210600263623 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C294E28A7210600263623 /* Datas.swift */; };
+		2F9C295128A7248D00263623 /* GardianCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C295028A7248D00263623 /* GardianCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2F9C294628A7200800263623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9C294C28A720D300263623 /* Guardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
 		2F9C294E28A7210600263623 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		2F9C295028A7248D00263623 /* GardianCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardianCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2F9C294628A7200800263623 /* Info.plist */,
 				2F9C294C28A720D300263623 /* Guardian.swift */,
 				2F9C294E28A7210600263623 /* Datas.swift */,
+				2F9C295028A7248D00263623 /* GardianCell.swift */,
 			);
 			path = GuardiansOfTheGalaxyCharacters;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9C295128A7248D00263623 /* GardianCell.swift in Sources */,
 				2F9C294D28A720D300263623 /* Guardian.swift in Sources */,
 				2F9C293D28A7200500263623 /* ViewController.swift in Sources */,
 				2F9C294F28A7210600263623 /* Datas.swift in Sources */,
