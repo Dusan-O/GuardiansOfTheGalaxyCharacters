@@ -13,6 +13,8 @@
 		2F9C294028A7200500263623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C293E28A7200500263623 /* Main.storyboard */; };
 		2F9C294228A7200800263623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C294128A7200800263623 /* Assets.xcassets */; };
 		2F9C294528A7200800263623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9C294328A7200800263623 /* LaunchScreen.storyboard */; };
+		2F9C294D28A720D300263623 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C294C28A720D300263623 /* Guardian.swift */; };
+		2F9C294F28A7210600263623 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C294E28A7210600263623 /* Datas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2F9C294128A7200800263623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F9C294428A7200800263623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F9C294628A7200800263623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9C294C28A720D300263623 /* Guardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
+		2F9C294E28A7210600263623 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				2F9C294128A7200800263623 /* Assets.xcassets */,
 				2F9C294328A7200800263623 /* LaunchScreen.storyboard */,
 				2F9C294628A7200800263623 /* Info.plist */,
+				2F9C294C28A720D300263623 /* Guardian.swift */,
+				2F9C294E28A7210600263623 /* Datas.swift */,
 			);
 			path = GuardiansOfTheGalaxyCharacters;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9C294D28A720D300263623 /* Guardian.swift in Sources */,
 				2F9C293D28A7200500263623 /* ViewController.swift in Sources */,
+				2F9C294F28A7210600263623 /* Datas.swift in Sources */,
 				2F9C293928A7200500263623 /* AppDelegate.swift in Sources */,
 				2F9C293B28A7200500263623 /* SceneDelegate.swift in Sources */,
 			);
