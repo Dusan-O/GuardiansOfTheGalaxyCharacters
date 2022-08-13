@@ -26,7 +26,7 @@
                                 <rect key="frame" x="5" y="200" width="404" height="662"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GardianCell" rowHeight="116" id="uen-oS-9db" customClass="GardianCell" customModule="GuardiansOfTheGalaxyCharacters" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GardianCell" rowHeight="116" id="uen-oS-9db" customClass="GardianCell" customModule="GuardiansOfTheGalaxyCharacters" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="404" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uen-oS-9db" id="qXg-9w-1TT">
@@ -78,17 +78,17 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="1dj-vy-8i6" id="1wz-QU-6hv"/>
-                        <segue destination="Yos-to-uU7" kind="show" id="DNa-ax-hy2"/>
+                        <segue destination="Yos-to-uU7" kind="show" identifier="ToDetail" id="DNa-ax-hy2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="70.982142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Controller-->
         <scene sceneID="gjf-xB-6Vl">
             <objects>
-                <viewController id="Yos-to-uU7" sceneMemberID="viewController">
+                <viewController id="Yos-to-uU7" customClass="DetailController" customModule="GuardiansOfTheGalaxyCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2M4-vR-oG4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZt-17-cUc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="VZt-17-cUc">
                                 <rect key="frame" x="20" y="268" width="374" height="574"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -132,14 +132,20 @@
                             <constraint firstItem="6Lc-Cr-hrX" firstAttribute="leading" secondItem="ePe-qa-vKe" secondAttribute="trailing" constant="8" id="Oau-pf-DqJ"/>
                             <constraint firstItem="Uk2-uH-70q" firstAttribute="trailing" secondItem="6Lc-Cr-hrX" secondAttribute="trailing" constant="20" id="S49-VR-F4U"/>
                             <constraint firstItem="6Lc-Cr-hrX" firstAttribute="top" secondItem="1Mb-dj-wC5" secondAttribute="bottom" constant="8" id="c7Q-Cr-PQt"/>
+                            <constraint firstItem="Uk2-uH-70q" firstAttribute="bottom" secondItem="VZt-17-cUc" secondAttribute="bottom" id="eNm-kB-fUB"/>
                             <constraint firstItem="1Mb-dj-wC5" firstAttribute="top" secondItem="2M4-vR-oG4" secondAttribute="top" id="jzh-nh-DK6"/>
                             <constraint firstItem="ePe-qa-vKe" firstAttribute="top" secondItem="1Mb-dj-wC5" secondAttribute="bottom" constant="-50" id="tJY-rL-dVU"/>
                             <constraint firstItem="VZt-17-cUc" firstAttribute="leading" secondItem="Uk2-uH-70q" secondAttribute="leading" constant="20" id="v2R-Js-sxV"/>
-                            <constraint firstItem="Uk2-uH-70q" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="VZt-17-cUc" secondAttribute="bottom" id="wZC-c7-5ux"/>
                             <constraint firstItem="1Mb-dj-wC5" firstAttribute="trailing" secondItem="Uk2-uH-70q" secondAttribute="trailing" id="yQ2-Ao-YTB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GZg-o2-CaW"/>
+                    <connections>
+                        <outlet property="descLbl" destination="VZt-17-cUc" id="31l-RB-ruJ"/>
+                        <outlet property="nameLbl" destination="6Lc-Cr-hrX" id="Ewf-6P-1Lb"/>
+                        <outlet property="profileView" destination="ePe-qa-vKe" id="10d-rr-D50"/>
+                        <outlet property="topView" destination="1Mb-dj-wC5" id="jhR-SE-36S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogD-zB-fKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,10 +13,19 @@ class ViewController: UIViewController {
     
     var gardians = Datas().gardians
     let cellID = "GardianCell"
+    let segueID = "ToDetail"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let detail = segue.destination as? DetailController {
+                detail.gardian = sender as? Gardian
+            }
+        }
     }
 }
 
@@ -45,7 +54,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(gardians[indexPath.row].name)
+        let gardianSelected = gardians[indexPath.row]
+        performSegue(withIdentifier: segueID, sender: gardianSelected)
         
     }
     
