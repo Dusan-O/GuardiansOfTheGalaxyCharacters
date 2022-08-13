@@ -19,6 +19,7 @@ class GardianCell: UITableViewCell {
         self.imageV.image = UIImage(named: self.gardian.imagePath)
         self.nameLbl.text = self.gardian.name
     }
+    
 
 }
   

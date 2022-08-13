@@ -9,8 +9,8 @@ import UIKit
 
 class DetailController: UIViewController {
 
-    @IBOutlet weak var topView: UIImageView!
-    @IBOutlet weak var profileView: UIImageView!
+    @IBOutlet weak var topView: BannerImageView!
+    @IBOutlet weak var profileView: RoundedImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var descLbl: UILabel!
     
@@ -29,9 +29,7 @@ class DetailController: UIViewController {
         profileView.image = UIImage(named: gardian!.imagePath)
         nameLbl.text = gardian!.name
         descLbl.text = gardian!.desc
-        profileView.layer.cornerRadius = self.profileView.frame.height / 2
-        profileView.layer.borderWidth = 2
-        profileView.layer.borderColor = UIColor.systemBackground.cgColor
+        
     }
 
 
