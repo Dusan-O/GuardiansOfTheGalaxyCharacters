@@ -9,12 +9,27 @@ import UIKit
 
 class BodyLabel: UILabel {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
     }
-    */
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    func setup() {
+        self.font = UIFont(name: "Noteworthy", size: 17)
+        self.adjustsFontSizeToFitWidth = true
+        self.textAlignment = .justified
+        numberOfLines = 0
+        textColor = .secondaryLabel
+//        let all = UIFont.familyNames
+//
+//        for font in all {
+//            print(font)
+//        }
+    }
 
 }

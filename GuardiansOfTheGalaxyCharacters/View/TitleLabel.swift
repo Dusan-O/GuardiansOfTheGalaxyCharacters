@@ -9,12 +9,24 @@ import UIKit
 
 class TitleLabel: UILabel {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
     }
-    */
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    func setup() {
+        self.font = UIFont(name: "Noteworthy-Bold", size: 30)
+        self.adjustsFontSizeToFitWidth = true
+//        let all = UIFont.familyNames
+//
+//        for font in all {
+//            print(font)
+//        }
+    }
 
 }

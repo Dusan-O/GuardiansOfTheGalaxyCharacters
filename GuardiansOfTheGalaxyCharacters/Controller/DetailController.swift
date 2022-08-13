@@ -11,8 +11,8 @@ class DetailController: UIViewController {
 
     @IBOutlet weak var topView: BannerImageView!
     @IBOutlet weak var profileView: RoundedImageView!
-    @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var descLbl: UILabel!
+    @IBOutlet weak var nameLbl: TitleLabel!
+    @IBOutlet weak var descLbl: BodyLabel!
     
     var gardian: Gardian?
     

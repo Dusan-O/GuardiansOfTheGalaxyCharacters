@@ -10,7 +10,7 @@ import UIKit
 class GardianCell: UITableViewCell {
 
     @IBOutlet weak var imageV: UIImageView!
-    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var nameLbl: TitleLabel!
     
     var gardian: Gardian!
     
